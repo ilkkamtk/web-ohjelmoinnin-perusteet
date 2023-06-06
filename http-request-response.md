@@ -2,7 +2,8 @@
 
 ---
 
-![Client - Server](images/client-server.svg)
+![Client - Server](images/client-server.svg){:width="800px" height="auto"}
+
 
 ---
 
