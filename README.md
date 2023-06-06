@@ -8,7 +8,7 @@
 5. JavaScript recap - DOM
 6. JavaScript recap - Event handling
 7. JavaScript recap - AJAX
-8. JavaScript - Arrow functions, special operators
+8. JavaScript - Arrow functions, special operators, destructuring
 9. JavaScript - Array methods, foreach, map, filter reduce
 10. PWA - Progressive Web Apps
 11. [TypeScript](typescript.md)
