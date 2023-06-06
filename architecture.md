@@ -42,6 +42,8 @@
 - These interactions trigger new requests from the client to the server, creating a continuous cycle of interaction.
 
 ---
+![Developer](images/developer.jpg)
+
 
 ## Front-End Development
 
