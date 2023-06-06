@@ -1,3 +1,4 @@
+![Mr. TypeScript](images/typescript.jpg)
 # TypeScript
 * is a syntactic superset of JavaScript, an open source project maintained by Microsoft to add types to JavaScript. 
 * comes in three parts: programming language, language server, and compiler. 
