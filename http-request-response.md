@@ -19,6 +19,7 @@ Accept-Language: en-US,en;q=0.9
 - **User-Agent**: The user agent string identifying the client.
 - **Accept**: The types of content the client can understand.
 - **Accept-Language**: The preferred languages for the response.
+- **Body**: for sending data with POST and PUT methods
 
 ---
 
