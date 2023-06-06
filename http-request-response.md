@@ -2,7 +2,7 @@
 
 ---
 
-<img src="images/client-server.svg" style="max-width: 1000px; height: 400px;" alt="Client - Server">
+<img src="images/client-server.svg" style="width: 1000px; max-height: 400px;" alt="Client - Server">
 
 
 
