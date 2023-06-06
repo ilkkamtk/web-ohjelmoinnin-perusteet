@@ -2,7 +2,8 @@
 
 ---
 
-![Client - Server](images/client-server.svg){:width="800px" height="auto"}
+<img src="images/client-server.svg" style="max-width: 1000px; height: 400px;" alt="Client - Server">
+
 
 
 ---
