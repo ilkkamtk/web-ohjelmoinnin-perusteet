@@ -2,6 +2,10 @@
 
 ---
 
+![Client - Server](images/client-server.svg)
+
+---
+
 ## HTTP request
 ![HTTP request](images/request.svg)
 ```http request

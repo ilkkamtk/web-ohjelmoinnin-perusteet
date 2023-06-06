@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300">
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" font-family="Verdana">
     <!-- Status Line (Blue) -->
     <rect width="380" height="30" x="10" y="10" fill="blue" />
     <text x="20" y="30" font-size="14" fill="white">HTTP/1.1 200 OK</text>
