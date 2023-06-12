@@ -5,21 +5,52 @@
 ## Type Safety
 Type safety is an important feature of full stack development. It helps us write better code by ensuring that the data types of variables and functions are correctly specified and used throughout the code. This helps to catch errors early in the development process and makes debugging easier. Type safety also helps to maintain the quality of the code and avoid unexpected issues further down the line.
 
-- Type safety in full stack development ensures that the code we are writing is correct and error-free.
+- Type safety ensures that the code we are writing is correct and error-free.
 - It ensures that the data types of variables and functions are correctly specified and that they are correctly used throughout the code.
 - Type safety helps catch errors early in the development process and makes debugging easier.
 - Type safety also helps to maintain the overall quality of the code and helps to avoid unexpected issues further down the line.
 
-For example, a REST API may accept a string on the client side but reject it on the server side due to type safety issues. If the server expects a number but the client side sends a string, the API will reject the request. This could cause unexpected errors and unexpected behavior. To avoid this, proper type safety needs to be implemented on both the client and server sides.
+Example without type safety:
+```javascript
+// Define a variable without specifying its type
+let age = 25;
 
-- On the client side, ensure that requests are sent using the appropriate data type. For example, send data as JSON.
-- On the server side, validate the data types of incoming requests and ensure that the data is in the correct format.
-    - for example in a query string everything is a string
-- On the server side, send a response with the appropriate data type. Again: JSON
+// Assigning a value of the wrong type will not produce an error
+age = "30"; // No error is thrown
 
-One of the better alternatives to REST APIs when considering type safety is [GraphQL](https://graphql.org/). GraphQL is strongly typed and can provide more precise control over data types. It can also be used to validate data types on both the client and server sides, while in REST APIs, data validation must be handled on the server side. Additionally, GraphQL can provide the exact data required with no issues of overfetching or underfetching.
+// Define a function without specifying parameter types or a return type
+function addNumbers(a, b) {
+  return a + b;
+}
 
-[tRPC](https://trpc.io/) is another alternative to REST APIs when considering type safety. tRPC is a type-safe RPC framework that allows services to communicate with each other over HTTP. It allows for the precise definition of data types, which helps to ensure that data is properly validated and that the correct data is exchanged between services. Additionally, tRPC supports multiple protocols, making it a flexible and powerful option for type-safe communication.
+// Invoking the function with arguments of the wrong type will not produce an error
+const result = addNumbers(10, "20"); // No error is thrown
+
+// Without type safety, the code allows assigning values of different types to variables
+// and invoking functions with arguments of any type, which may lead to unexpected behavior or errors during runtime.
+
+```
+
+Example with type safety:
+```typescript
+// Define a variable with a specific type
+let age: number = 25;
+
+// Attempting to assign a value of the wrong type will result in a compilation error
+age = "30"; // This line will produce a compilation error
+
+// Define a function with specific parameter types and a return type
+function addNumbers(a: number, b: number): number {
+  return a + b;
+}
+
+// Invoking the function with arguments of the wrong type will result in a compilation error
+const result = addNumbers(10, "20"); // This line will produce a compilation error
+
+// TypeScript's type safety ensures that variables and functions are used correctly,
+// helping to catch errors during development and improve code quality.
+
+```
 
 ---
 
