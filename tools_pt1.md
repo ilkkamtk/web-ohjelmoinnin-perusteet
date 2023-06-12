@@ -231,6 +231,9 @@ code analysis and identifying potential issues.
 7. Write `.editorconfig` and `.prettierrc.js` files according to the examples earlier in this page.
 8. Open the settings in Visual Studio Code by clicking on "File" -> "Preferences" -> "Settings" or using the shortcut Ctrl + ,.
 9. In the search bar, type "Format On Save" and check the box to enable it. This ensures that your code will be automatically formatted when you save the file.
+   - If you are using Webstorm, enable ESLint in your WebStrom project
+   - [Instructions](https://www.jetbrains.com/help/webstorm/eslint.html)
+       - [Importing code style](https://www.jetbrains.com/help/webstorm/eslint.html#ws_js_linters_eslint_import_code_style_from_eslint) is the most interesting part
 10. Write new JavaScript file `main.js`:
     ```javascript
     function greeting () 
@@ -241,6 +244,7 @@ code analysis and identifying potential issues.
     greeting();
     ```
 11. Save the file. Note how VSCode fixes formatting errors automatically.
+12. If you are using WebStorm, right click somewhere over .eslintrc.js, choose 'Apply ESlint Code Style Rules'. Enable format on save on [WebStorm](https://www.jetbrains.com/help/webstorm/eslint.html#ws_eslint_configure_run_eslint_on_save).
 
 
 
