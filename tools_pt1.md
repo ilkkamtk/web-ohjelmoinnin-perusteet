@@ -220,7 +220,7 @@ code analysis and identifying potential issues.
    - What format do you want your config file to be in? **JavaScript**
    - Would you like to install them now? **Yes**
    - Which package manager do you want to use? **npm**
-5. Install Prettier plugin for ESLint: `npm i -D prettier eslint-plugin-prettier eslint-config-prettier`
+5. Install Prettier plugin for ESLint: `npm i -D eslint-plugin-prettier eslint-config-prettier`
 6. You should have new file `.eslintrc.js`. Modify _extends_ and _rules_ properties:
    ```javascript
    ...
@@ -276,7 +276,9 @@ code analysis and identifying potential issues.
     ```
 15. Create new repository on GitHub and push current project there.
 16. [Set the repository to be a template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository)
-17. Now you can easily make new JavaScript projects with the same settings.
+17. Now you can easily make new JavaScript projects with the same settings with ´Use this template/Create a new repository`.
+    - After creating a new repository get the files to your local computer by cloning the new repository: `git clone https://address/to/repository.git`
+       - You can easily get the address to the repository from the `<> Code` button in GitHub
     - [Here is the teacher's version](https://github.com/ilkkamtk/javascript-starter)
 
 
