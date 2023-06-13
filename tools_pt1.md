@@ -277,6 +277,6 @@ code analysis and identifying potential issues.
 15. Create new repository on GitHub and push current project there.
 16. [Set the repository to be a template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository)
 17. Now you can easily make new JavaScript projects with the same settings.
-    - [Here is the teachers version](https://github.com/ilkkamtk/javascript-starter)
+    - [Here is the teacher's version](https://github.com/ilkkamtk/javascript-starter)
 
 
