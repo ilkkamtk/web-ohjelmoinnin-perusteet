@@ -118,7 +118,7 @@ Both formatters and linters contribute to maintaining code quality and consisten
 of the development process. Formatters primarily deal with code formatting and style, while linters primarily focus on
 code analysis and identifying potential issues.
 
-## EditorConfig
+## [EditorConfig](https://editorconfig.org/)
 
 - is a file format and tool that helps maintain consistent coding styles across different code editors and IDEs.
 - provides a way to define and enforce coding style preferences such as indentation, line endings, encoding, and
@@ -169,7 +169,7 @@ code analysis and identifying potential issues.
     
     ```
 
-## Prettier
+## [Prettier](https://prettier.io/)
 
 - is a popular code formatter that helps ensure consistent code style across projects.
 - automatically formats code based on a set of predefined rules, eliminating the need for manual formatting.
@@ -190,13 +190,13 @@ code analysis and identifying potential issues.
     };
     ```
 
-## ESLint
+## [ESLint](https://eslint.org/)
 
 - is a widely used linter for JavaScript and TypeScript that helps identify and enforce coding conventions, best
   practices, and potential errors in code.
 - analyzes code statically and provides warnings or errors for common programming mistakes, potential bugs, and
   violations of coding standards.
-- offers a highly configurable rule set that allows developers to customize the linting rules according to their
+- offers a highly configurable [rule set](https://eslint.org/docs/latest/use/configure/rules) that allows developers to customize the linting rules according to their
   project's specific requirements.
 - supports various plugins and extensions, allowing for additional rules and language-specific linting capabilities.
 - enables collaboration among team members by providing a shared set of rules and standards for writing clean and
@@ -208,26 +208,29 @@ code analysis and identifying potential issues.
 ## Generating JavaScript project settings for Prettier, ESLint and EditorConfig
 1. Install [Node.js LTS version](https://nodejs.org/en) (more about Node later in this course)
 2. Create new folder. Open your terminal to that folder. Run `npm init -y`
-3. Install ESLint with Prettier plugin: `npm i -D eslint prettier eslint-plugin-prettier`
-4. Run ESLint configuration: `npm init @eslint/config`
-5. Answers to questions in order:
-   - y
-   - To check syntax, find problems, and enforce code style
-   - JavaScript modules (import/export)
-   - None of these
-   - No
-   - Browser
-   - Use a popular style guide
-   - Google: https://github.com/google/eslint-config-google
-   - JavaScript
-   - Yes
-   - npm
-6. You should now have new file `.eslintrc.js`. Add 'require-jsdoc': 'off' to the rules object:
-    ```javascript
-    rules: {
-      'require-jsdoc': 'off',
-    },
-    ```
+3. Run ESLint configuration: `npm init @eslint/config`
+4. Answers to questions in order:
+   - How would you like to use ESLint? **To check syntax, find problems, and enforce code style**
+   - What type of modules does your project use? **JavaScript modules (import/export)**
+   - Which framework does your project use? **None of these**
+   - Does your project use TypeScript? **No**
+   - Where does your code run? **Browser**
+   - How would you like to define a style for your project? **Use a popular style guide**
+   - Which style guide do you want to follow? **Google: https://github.com/google/eslint-config-google**
+   - What format do you want your config file to be in? **JavaScript**
+   - Would you like to install them now? **Yes**
+   - Which package manager do you want to use? **npm**
+5. Install Prettier plugin for ESLint: `npm i -D prettier eslint-plugin-prettier eslint-config-prettier`
+6. You should have new file `.eslintrc.js`. Modify _extends_ and _rules_ properties:
+   ```javascript
+   ...
+   extends: ['google', 'eslint:recommended', 'plugin:prettier/recommended'],  // if using WebStorm, omit plugin:prettier/recommended
+   ...
+   rules: {
+      'require-jsdoc': 0,
+   },
+   ...
+   ```
 7. Write `.editorconfig` and `.prettierrc.js` files according to the examples earlier in this page.
 8. Open the settings in Visual Studio Code by clicking on "File" -> "Preferences" -> "Settings" or using the shortcut Ctrl + ,.
 9. In the search bar, type "Format On Save" and check the box to enable it. This ensures that your code will be automatically formatted when you save the file.
@@ -245,6 +248,35 @@ code analysis and identifying potential issues.
     ```
 11. Save the file. Note how VSCode fixes formatting errors automatically.
 12. If you are using WebStorm, right click somewhere over .eslintrc.js, choose 'Apply ESlint Code Style Rules'. Enable format on save on [WebStorm](https://www.jetbrains.com/help/webstorm/eslint.html#ws_eslint_configure_run_eslint_on_save).
-
+13. Write index.html:
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <script src="main.js" defer></script>
+    </head>
+    
+    <body>
+      <h1>Sample Page</h1>
+    </body>
+    
+    </html>
+    ```
+14. Write `.gitignore` file:
+    ```gitignore
+    .vscode
+    .idea
+    node_modules
+    .DS_Store
+    ```
+15. Create new repository on GitHub and push current project there.
+16. [Set the repository to be a template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository)
+17. Now you can easily make new JavaScript projects with the same settings.
+    - [Here is the teachers version](https://github.com/ilkkamtk/javascript-starter)
 
 
