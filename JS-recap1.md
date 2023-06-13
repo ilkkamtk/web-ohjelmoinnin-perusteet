@@ -48,27 +48,26 @@ assingment number in file names.
       loop to iterate through each of these numbers and add them together. Finally, the program will display the sum,
       which in this case would be 15, on the HTML document.
     - 3p
-7. Assignment: Multiplication Table
-
-Write a program that prompts the user to enter a positive integer and generates a multiplication table up to that number
-using a `for` loop. The multiplication table displays the product of each pair of numbers from 1 to the entered number.
-
-Your program should follow these steps:
-
-1. Create an HTML file with a `<script>` tag inside the `<body>` section.
-2. Inside the script tag, write JavaScript code that prompts the user to enter a positive integer using the `prompt()`
-   function. Store the user's input in a variable.
-3. Convert the user's input from a string to a number using the `parseInt()` or `parseFloat()` function.
-4. Use nested `for` loops to generate the multiplication table.
-5. The outer loop will iterate from 1 up to the entered number, representing the rows of the table.
-6. The inner loop will also iterate from 1 up to the entered number, representing the columns of the table.
-7. Inside the nested loops, calculate the product of the current row and column values.
-8. Display each product in a formatted way to create the multiplication table on the HTML document.
+7. Write a program that prompts the user to enter a positive integer and generates a multiplication table up to that
+   number
+   using a `for` loop. The multiplication table displays the product of each pair of numbers from 1 to the entered
+   number.
+    - Your program should follow these steps:
+        1. Create an HTML file with a `<script>` tag inside the `<body>` section.
+        2. Inside the script tag, write JavaScript code that prompts the user to enter a positive integer using
+           the `prompt()`
+           function. Store the user's input in a variable.
+        3. Convert the user's input from a string to a number using the `parseInt()` or `parseFloat()` function.
+        4. Use nested `for` loops to generate the multiplication table.
+        5. The outer loop will iterate from 1 up to the entered number, representing the rows of the table.
+        6. The inner loop will also iterate from 1 up to the entered number, representing the columns of the table.
+        7. Inside the nested loops, calculate the product of the current row and column values.
+        8. Display each product in a formatted way to create the multiplication table on the HTML document.
     - Example Output:
 
        ```
        Enter a positive integer: 5
-    
+       
        Multiplication Table:
        1   2   3   4   5
        2   4   6   8   10
@@ -79,7 +78,7 @@ Your program should follow these steps:
 
        ```
        Enter a positive integer: 3
-    
+       
        Multiplication Table:
        1   2   3
        2   4   6
@@ -93,23 +92,23 @@ Your program should follow these steps:
         - Display each product in a formatted way to create the multiplication table on the HTML document.
     - Example html result:
 
-   ```html
-   <table>
-       <tr>
-           <td>1</td>
-           <td>2</td>
-           <td>3</td>
-       </tr>
-       <tr>
-           <td>4</td>
-           <td>5</td>
-           <td>6</td>
-       </tr>
-       <tr>
-           <td>7</td>
-           <td>8</td>
-           <td>9</td>
-       </tr>
-   </table>
-   ```
+       ```html
+       <table>
+         <tr>
+             <td>1</td>
+             <td>2</td>
+             <td>3</td>
+         </tr>
+         <tr>
+             <td>4</td>
+             <td>5</td>
+             <td>6</td>
+         </tr>
+         <tr>
+             <td>7</td>
+             <td>8</td>
+             <td>9</td>
+         </tr>
+       </table>
+       ```
     - 6p
