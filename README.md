@@ -5,8 +5,8 @@
 2. [HTTP request - response](http-request-response.md)
 3. [Toolchain](tools_pt1.md)
 4. [JavaScript recap - Conditional expressions and loops](JS-recap1.md)
-5. JavaScript recap - Arrays and functions
-6. JavaScript recap - DOM
+5. [JavaScript recap - Arrays and functions](JS-recap2.md)
+6. [JavaScript recap - DOM](JS-recap3.md)
 7. JavaScript recap - Event handling
 8. JavaScript recap - AJAX
 9. JavaScript - Arrow functions, special operators, destructuring
