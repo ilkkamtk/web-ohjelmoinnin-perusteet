@@ -76,8 +76,7 @@ Handy keyboard shortcuts (finnish layout, check _File -> Preferences -> Keyboard
 ## Browser & debugging
 
 - Chrome & [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/)
--
-Safari & [Safari Develop menu](https://support.apple.com/guide/safari/use-the-developer-tools-in-the-develop-menu-sfri20948/mac)
+- Safari & [Safari Develop menu](https://support.apple.com/guide/safari/use-the-developer-tools-in-the-develop-menu-sfri20948/mac)
 
 ![Chrome screenshot](images/chrome-devtools.png)
 

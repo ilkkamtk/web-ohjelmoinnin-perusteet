@@ -5,8 +5,11 @@ Study the material from the first year course:
 1. [Arrays and functions](https://github.com/ilkkamtk/JavaScript-english/blob/main/taulukot-funktiot.md)
 
 ## Assignments:
+Use the starter repository you made in the first class as a template to create a new repository for these assignments.
+Clone the new repository to your local computer. Put each assignment into its own folder. Write separate HTML and JS files for each assignment. Use the
+assignment number in file and folder names.
 
-1. Write a JavaScript program that focuses on the basic concepts arrays. Your program
+1. Write a JavaScript program that focuses on the basic concepts of arrays. Your program
    should include the following requirements:
     1. Create an array called `fruits` and initialize it with the following elements: "apple", "banana", "orange", "
        grape", "kiwi".

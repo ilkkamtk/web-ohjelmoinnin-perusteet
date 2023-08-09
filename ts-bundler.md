@@ -47,7 +47,7 @@ In this configuration, we specify the entry point of our application (`index.ts`
 }
 ```
 
-4. Update your HTML file to reference the bundled file:
+4. Update your HTML file to reference the bundled JavaScript file:
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -64,7 +64,7 @@ In this configuration, we specify the entry point of our application (`index.ts`
 </html>
 ```
 
-5. Create your entry point TypeScript file, `index.ts`, where you can import and use your `greeting` function:
+5. Create your entry point TypeScript file named `index.ts`. In this file you'll import and use the `greeting` function:
 ```typescript
 import greeting from './functions/greeting';
 
@@ -74,7 +74,7 @@ if (h1Element) {
 }
 ```
 
-6. Modify package.json to add start scripts for development and building:
+6. Modify the `package.json` file to add start scripts for development and building:
 ```json
 "scripts": {
   "build": "rollup -c",
@@ -82,13 +82,13 @@ if (h1Element) {
 },
 ```
 
-6. When developing run:
+6. To start development, run:
 ```shell
 npm run dev
 ```
-7. When compiling the final code run:
+7. To compile the final code, run:
 ```shell
 npm run build
 ```
-  - This will bundle your TypeScript code and its dependencies into a single `bundle.js` file in the `dist` directory. You can then open your HTML file in the browser to see the result.
+  - This command will bundle your TypeScript code and its dependencies into a single `bundle.js` file located in the `dist` directory. After running the build command, you can open your HTML file in a web browser to see the final result.
 

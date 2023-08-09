@@ -26,8 +26,8 @@ function addNumbers(a, b) {
 // Invoking the function with arguments of the wrong type will not produce an error
 const result = addNumbers(10, "20"); // No error is thrown
 
-// Without type safety, the code allows assigning values of different types to variables
-// and invoking functions with arguments of any type, which may lead to unexpected behavior or errors during runtime.
+// Without type safety, the code allows the assignment of values of different types to variables
+// and the invocation of functions with arguments of any type, which can lead to unexpected behavior or runtime errors.
 
 ```
 
@@ -56,15 +56,15 @@ const result = addNumbers(10, "20"); // This line will produce a compilation err
 
 # TypeScript
 - is a superset of JavaScript that adds optional static typing.
-- comes in three parts: programming language, language server, and compiler.
-- can catch errors such as incomplete refactoring, missing values, and internal contracts within the code base.
+- consists of three main components: a programming language, a language server, and a compiler.
+- is capable of catching errors like incomplete refactoring, missing values, and internal codebase contracts.
 - can increase productivity and help developers catch errors early on.
 - provides support for popular JavaScript libraries and frameworks such as React and Node.js.
-- can be used to write code that runs both on the client and server sides.
-- was created by Microsoft in 2012 as an open-source language.
+- can be used to write code that operates both on the client and server sides.
+- was developed by Microsoft in 2012 as an open-source programming language.
 
 #### Some terminology
-- **[Static Typing](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html#typescript-a-static-type-checker)**: TypeScript adds optional static typing to JavaScript, which enables developers to write code that is more maintainable and easier to debug.
+- **[Static Typing](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html#typescript-a-static-type-checker)**: TypeScript introduces optional static typing to JavaScript, enabling developers to create code that is more maintainable and easier to debug.
 - **[Compiler](https://www.typescriptlang.org/download)**: TypeScript uses a compiler to compile the TypeScript code into JavaScript code.
 - **[TypeScript Declaration Files](https://www.typescriptlang.org/docs/handbook/2/type-declarations.html)**: TypeScript Declaration Files provide type information for external JavaScript libraries and can be used to enable type safety for these libraries.
 

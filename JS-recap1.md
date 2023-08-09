@@ -8,18 +8,21 @@ Study the material from the first year course:
 ## Assignments:
 
 Use the starter repository you made in the first class as a template to create a new repository for these assignments.
-Clone the new repository to your local computer. Write separate HTML and JS files for each assignment. Use the
-assingment number in file names.
+Clone the new repository to your local computer. Put each assignment into its own folder. Write separate HTML and JS files for each assignment. Use the
+assignment number in file and folder names.
 
 1. Write a program that prompts the user for a temperature in Celsius and converts it to Fahrenheit and Kelvin. The
    program should then display the converted temperatures in an HTML document.
     - Calculate the temperature in Fahrenheit by using the formula: F = (C * 9/5) + 32, where F is the temperature in
       Fahrenheit and C is the temperature in Celsius.
-    - 3p
-2. Write a program for a random number game. The program should ask the user to guess a number between 1 and 6 and then
-   simulate a die roll. If the user's guess matches the rolled number, the program should display a "Congratulations!"
-   message on the HTML document. Otherwise, it should display a "Try again!" message in the HTML page.
-    - 3p
+    - 2p
+2. Write a program that calculates the distance between two points on a 2D plane and displays the result in an HTML document. The program should prompt the user for the coordinates of two points (x, y) and then calculate the Euclidean distance between them using the formula:
+   ```text
+   Distance = √((x2 - x1)^2 + (y2 - y1)^2)
+   ```
+     - In total, there will be four prompts to input the x and y coordinates for the two points.
+     - You can do it also with fewer promts if you use string methods like [split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split).
+     - 3p
 3. Write a program that prompts the user to enter the lengths of three sides of a triangle and determines the type of
    triangle based on the side lengths. The program should classify the triangle as equilateral (all sides are equal),
    isosceles (two sides are equal), or scalene (no sides are equal). Print the result on the HTML document.
@@ -27,12 +30,12 @@ assingment number in file names.
     - 3p
 4. Write a program that prompts the user to enter their score for a course assessment and determines their grade based
    on the following grading scale:
-    - Scores between 0 and 39 (inclusive) receive a grade of 0.
-    - Scores between 40 and 51 (inclusive) receive a grade of 1.
-    - Scores between 52 and 63 (inclusive) receive a grade of 2.
-    - Scores between 64 and 75 (inclusive) receive a grade of 3.
-    - Scores between 76 and 87 (inclusive) receive a grade of 4.
-    - Scores between 88 and 100 (inclusive) receive a grade of 5.
+    - Scores between 0 and 39 receive a grade of 0.
+    - Scores between 40 and 51 receive a grade of 1.
+    - Scores between 52 and 63 receive a grade of 2.
+    - Scores between 64 and 75 receive a grade of 3.
+    - Scores between 76 and 87 receive a grade of 4.
+    - Scores between 88 and 100 receive a grade of 5.
     - Print the result on the HTML document.
     - 3p
 5. Make a new version of assignment 2. The number game should continue until the user guesses the number correctly.
@@ -53,16 +56,15 @@ assingment number in file names.
    using a `for` loop. The multiplication table displays the product of each pair of numbers from 1 to the entered
    number.
     - Your program should follow these steps:
-        1. Create an HTML file with a `<script>` tag inside the `<body>` section.
-        2. Inside the script tag, write JavaScript code that prompts the user to enter a positive integer using
+        1. Write JavaScript code that prompts the user to enter a positive integer using
            the `prompt()`
            function. Store the user's input in a variable.
-        3. Convert the user's input from a string to a number using the `parseInt()` or `parseFloat()` function.
-        4. Use nested `for` loops to generate the multiplication table.
-        5. The outer loop will iterate from 1 up to the entered number, representing the rows of the table.
-        6. The inner loop will also iterate from 1 up to the entered number, representing the columns of the table.
-        7. Inside the nested loops, calculate the product of the current row and column values.
-        8. Display each product in a formatted way to create the multiplication table on the HTML document.
+        2. Convert the user's input from a string to a number using the `parseInt()` or `parseFloat()` function.
+        3. Use nested `for` loops to generate the multiplication table.
+        4. The outer loop will iterate from 1 up to the entered number, representing the rows of the table.
+        5. The inner loop will also iterate from 1 up to the entered number, representing the columns of the table.
+        6. Inside the nested loops, calculate the product of the current row and column values.
+        7. Display each product in a formatted way to create the multiplication table on the HTML document.
     - Example Output:
 
        ```
