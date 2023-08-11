@@ -243,7 +243,19 @@ Primitive types in TypeScript represent the basic building blocks for variables 
    
    console.log('Heading: ' + heading);
    ```
+6. **Generics**
 
+    - Generics in TypeScript allow you to create flexible and reusable components that work with various data types while preserving type safety.
+    - You can create functions that operate on different types by using type parameters.
+    ```typescript
+    function identity<T>(value: T): T {
+        return value;
+    }
+    
+    const result = identity(42); // Inferred type: number
+    const message = identity("Hello"); // Inferred type: string
+    ```
+    
 # Ecercises
 
 ## Primitive Types
