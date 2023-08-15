@@ -1,5 +1,5 @@
 # Bundler
-Bundlers are used for optimizing and organizing code. Bundlers take modular code structures, consisting of multiple JavaScript and CSS files, and combine them into a single, optimized bundle that can be served to the browser. They support modern JavaScript module systems, optimize code through various transformations, perform asset management, and enhance the developer experience with features like live reloading and hot module replacement. Popular bundlers such as Webpack, Rollup, and Parcel provide developers with powerful tools to improve performance, streamline development workflows, and support modern web development practices.
+Bundlers are used for optimizing and organizing code. Bundlers take modular code structures, consisting of multiple JavaScript/TypeScript and CSS files, and combine them into a single, optimized bundle that can be served to the browser. They support modern JavaScript module systems, optimize code through various transformations, perform asset management, and enhance the developer experience with features like live reloading and hot module replacement. Popular bundlers such as Webpack, Rollup, and Parcel provide developers with powerful tools to improve performance, streamline development workflows, and support modern web development practices.
 
 ## Example with Rollup
 

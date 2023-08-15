@@ -9,16 +9,17 @@
 6. [JavaScript recap - DOM](JS-recap3.md)
 7. [JavaScript recap - Event handling](JS-recap4.md)
 8. [JavaScript recap - AJAX](JS-recap5.md)
-9. JavaScript - Arrow functions, special operators, destructuring, modules
-10. JavaScript - Array methods, foreach, map, filter reduce
-11. PWA - Progressive Web Apps
+9. [JavaScript - Arrow functions, special operators, destructuring, modules](AdvancedJavaScript1.md)
+10. [JavaScript - Array methods, foreach, map, filter reduce](AdvancedJavascript2.md)
+11. [PWA - Progressive Web Apps](pwa.md)
 12. [TypeScript](typescript.md)
 13. [TypeScript toolchain](tools_pt2.md)
 14. [Node.js](node.md)
 15. [npm](npm.md)
-16. TypeScript 1
-17. TypeScript 2
-18. TypeScript 3
-19. TypeScript - Vite
-20. TypeScript - Vite PWA plugin
-21. TypeScript - Unit testing basics
+16. [Bundler](ts-bundler.md)
+17. [TypeScript 1](ts1.md)
+18. [TypeScript 2](ts2.md)
+19. TypeScript 3
+20. TypeScript - Vite
+21. TypeScript - Vite PWA plugin
+22. TypeScript - Unit testing basics
