@@ -44,6 +44,10 @@
 
 ---
 
+## Exercises
+
+---
+
 ## Assignment
 
 ### Enhancing the Modular Restaurant App
