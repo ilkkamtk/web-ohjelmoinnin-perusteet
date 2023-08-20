@@ -44,7 +44,7 @@
 
 ---
 
-## Exercises
+## [Exercises](AJS-exercises.md)
 
 ---
 

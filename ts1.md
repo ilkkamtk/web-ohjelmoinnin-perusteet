@@ -171,6 +171,37 @@ Primitive types in TypeScript represent the basic building blocks for variables 
     - Strive for consistency in your codebase, using the approach that best fits the context and contributes to code
       quality.
 
+## Function Type Annotations
+
+1. **Explaining the Syntax for Specifying Parameter Types and Return Type Using Type Annotations:**
+    - TypeScript allows you to annotate function parameters and return types using the colon `:` followed by the desired type.
+    - The syntax for function type annotations is: `(parameter: type, parameter: type): return_type`.
+    - You can use primitive types like `number`, `string`, `boolean`, custom types, or even union types in annotations.
+
+2. **Benefits of Using Type Annotations for Functions:**
+    - **Type Safety:** Type annotations catch type-related errors during development, helping you avoid unexpected runtime errors.
+    - **Readability:** Annotations make code more readable by clearly indicating what types of values a function expects and returns.
+    - **Documentation:** Annotations serve as documentation, providing a clear understanding of the function's contract.
+    - **Intellisense:** Integrated development environments can provide better code suggestions and autocompletion based on type annotations.
+
+3. **Examples of Functions with Type Annotations:**
+   ```typescript
+   // Function with type annotations
+   function addNumbers(a: number, b: number): number {
+     return a + b;
+   }
+   
+   // Function with complex parameter types and return type
+   function formatUser(name: string, age: number): { name: string; age: number } {
+     return { name, age };
+   }
+   
+   // Function with optional and default parameters
+   function greetUser(name: string, greeting: string = "Hello"): string {
+     return `${greeting}, ${name}!`;
+   }
+   ```
+
 ## Advanced Type System Features
 
 1. **Type Inference:**
@@ -256,57 +287,80 @@ Primitive types in TypeScript represent the basic building blocks for variables 
     const message = identity("Hello"); // Inferred type: string
     ```
     
-# Ecercises
+# Assignments
 
-## Primitive Types
-
-### Exercise 1: Calculating Total Cost
+### Assignment 1: Calculating Total Cost
 
 Write a TypeScript program that calculates the total cost of a shopping cart. The cart contains items with their prices.
-Use the `number` primitive type for prices and quantities.
+Use the `number` primitive type for prices and quantities. Start by creating the interface first.
 
-1. Create an empty array named `cart` to store the items.
-2. Use a loop to prompt the user for the name, price, and quantity of each item. Store these values as objects in
-   the `cart` array.
-3. When the user enters an empty value for the item name, proceed to calculate the total cost by iterating through
-   the `cart` array and summing up the product of each item's price and quantity.
-4. Display the total cost to the user.
+```TypeScript
+// TODO: Write interface Item
+// TODO: Define the properties 'name', 'price', and 'quantity' within the interface
 
-### Exercise 2: String Manipulation
+// Create an empty array named 'cart' to store the items
+const cart: Item[] = [];
 
-Create a function that takes a sentence as a string input and returns the sentence reversed. Use the `string` primitive
-type for the input and output.
+// TODO: Implement a loop to prompt the user for item details
+// Use 'while' loop to keep prompting until an empty item name is entered
+while (true) {
+  // TODO: Prompt user for item name, price, and quantity
+  const itemName = /* TODO: Get user input */;
+  
+  // Break the loop if an empty item name is entered
+  if (itemName === "") {
+    break;
+  }
+  
+  const itemPrice = /* TODO: Get user input */;
+  const itemQuantity = /* TODO: Get user input */;
+  
+  // Create an item object and add it to the 'cart' array
+  const newItem: Item = { name: itemName, price: itemPrice, quantity: itemQuantity };
+  cart.push(newItem);
+}
 
-1. Prompt the user to enter a sentence as a string and store it in a variable.
-2. Split the sentence into an array of words using the `split` method.
-3. Use a loop to reverse the order of the words in the array.
-4. Join the reversed array of words back into a sentence using the `join` method.
-5. Display the reversed sentence to the user.
+// Calculate the total cost using the 'map' and 'reduce' functions
+const totalCost = cart.map(item => item.price * item.quantity).reduce((sum, cost) => sum + cost, 0);
 
-### Exercise 3: Logical Decisions
+// Display the total cost to the user
+console.log(`Total cost of the shopping cart: $${totalCost.toFixed(2)}`);
 
-Write a program that determines if a given student is eligible for a discount based on their age and student status. Use
-the `boolean` primitive type to represent eligibility and the `number` primitive type for age.
+```
 
-1. Prompt the user to enter their age as a number and their student status as a boolean.
-2. Use conditional statements to check if the age is less than 18 or if the student status is `true`.
-3. If either condition is met, display a message to the user indicating that they are eligible for a discount.
-   Otherwise, inform them that they are not eligible.
-
-### Exercise 4: Managing Null and Undefined
+### Assignment 2: Managing Null and Undefined
 
 Develop a function that takes a number and returns the square root. Handle cases where the input is negative or
 undefined. Use the `number`, `null`, and `undefined` primitive types.
 
-1. Prompt the user to enter a number and store it in a variable.
-2. Check if the entered value is a valid number.
-3. If the value is a valid number, calculate the square root using the `Math.sqrt` function and display the result.
-4. If the value is not a valid number, display an error message.
-5. If the user enters an empty value, display a message indicating that no value was entered.
+```TypeScript
+// TODO: Implement the squareRoot function
+// parameter num should be a number or null or undefined and the function shoud return a number or a string
+function squareRoot(num) {
+  // TODO: Check if the input is undefined or null. If fail, return 'Input is undefined or null.'
+    
+  // TODO: Check if the input is a valid number. If fail, return 'Invalid input. Please enter a valid number.'
+    
+  // TODO: Handle cases where the input is negative. If fail, return 'Cannot calculate square root of a negative number.'
+ 
+  // Calculate the square root and return the result
+  const sqrt = Math.sqrt(num);
+  return sqrt;
+}
 
-## Type Aliases and Interfaces
+// Prompt the user to enter a number
+const userInput = /* TODO: Get user input */;
 
-### Exercise 1: Defining Custom Types
+// Convert user input to a number or keep it undefined if empty
+// TODO: replce x and y with proper types
+const numberInput: x | y = userInput ? parseFloat(userInput) : undefined;
+
+// Call the squareRoot function and display the result
+const result = squareRoot(numberInput);
+console.log(result);
+```
+
+### Assignment 3: Defining Custom Types
 
 Create a type alias for a book with properties like title, author, and publication year. Define an object using this
 type alias and print its details.
@@ -317,29 +371,34 @@ type alias and print its details.
    with the entered values.
 3. Display the details of the book object to the user.
 
-### Exercise 2: Using Interfaces
+```typescript
+// TODO: Define a type alias named 'Book' with appropriate properties
 
-Define an interface for a geometric shape with properties like type, dimensions, and area calculation method. Implement
-the interface for a rectangle and a circle.
 
-1. Define an interface named `GeometricShape` with properties `type`, `dimensions`, and a method `calculateArea()` that
-   returns a number.
-2. Implement the `GeometricShape` interface for a `Rectangle` by prompting the user to enter its dimensions and
-   calculating the area using the provided formula.
-3. Implement the `GeometricShape` interface for a `Circle` by prompting the user to enter its radius and calculating the
-   area.
+// TODO: Implement the promptForBook function
+function promptForBook() {
+  // TODO: Prompt user for book details (title, author, publication year)
+  const bookTitle = /* TODO: Get user input for title */;
+  const bookAuthor = /* TODO: Get user input for author */;
+  const bookPublicationYear = /* TODO: Get user input for publication year */;
 
-### Exercise 3: Extending Interfaces
+  // TODO: Create an object of type 'Book' with the entered values
+  const book: Book = /* TODO: Create the Book object */;
+  return book;
+}
 
-Extend the previous geometric shape interface to include a color property. Implement the extended interface for a
-colored rectangle and a colored circle.
+// TODO: Call the promptForBook function to get the book details
+const bookDetails = promptForBook();
 
-1. Extend the `GeometricShape` interface to include a property `color` with a suitable primitive type.
-2. Implement the extended interface for a `ColoredRectangle` by implementing the `calculateArea` method and prompting
-   the user to enter the color.
-3. Implement the extended interface for a `ColoredCircle` in a similar manner.
+// TODO: Display the details of the book object to the user
+console.log("Book Details:");
+console.log(`Title: ${bookDetails.title}`);
+console.log(`Author: ${bookDetails.author}`);
+console.log(`Publication Year: ${bookDetails.publicationYear}`);
 
-### Exercise 4: Combinations of Types
+```
+
+### Assignment 4: Combinations of Types
 
 Define a type alias for a product that can be either an electronic device with brand and model or a book with title and
 author. Create instances of this type alias for different products.
@@ -348,9 +407,55 @@ author. Create instances of this type alias for different products.
 2. Implement instances of the `Product` type for a sample electronic device and a book, prompting the user for details.
 3. Display the details of each product, including the properties specific to the chosen type.
 
-## Advanced Type System Features
+```TypeScript
+// TODO Define the 'ElectronicDevice' interface (or type)
 
-### Exercise 1: Union Types
+// Define the 'Book' interface (or type)
+
+// Define the 'Product' type alias that can represent either 'ElectronicDevice' or 'Book'
+
+
+// Implement instances of the 'Product' type
+function createElectronicDevice(): ElectronicDevice {
+  // TODO: Prompt user for electronic device details (brand and model)
+  const brand = /* TODO: Get user input for brand */;
+  const model = /* TODO: Get user input for model */;
+  // TODO: return object containing brand and model
+}
+
+function createBook(): Book {
+  // TODO: Prompt user for book details (title and author)
+  const title = /* TODO: Get user input for title */;
+  const author = /* TODO: Get user input for author */;
+  // TODO: return object containing title and author
+}
+
+// Create instances of 'Product'
+const electronicProduct = createElectronicDevice();
+const bookProduct = createBook();
+
+// Display the details of each product
+function displayProductDetails(product: Product) {
+  console.log(`Product Type: ${product.type}`);
+  if (product.type === 'electronic') {
+    console.log(`Brand: ${product.brand}`);
+    console.log(`Model: ${product.model}`);
+  } else {
+    console.log(`Title: ${product.title}`);
+    console.log(`Author: ${product.author}`);
+  }
+}
+
+console.log('Electronic Device Details:');
+displayProductDetails(electronicProduct);
+
+console.log();
+
+console.log('Book Details:');
+displayProductDetails(bookProduct);
+```
+
+### Assignment 5: Union Types + Type Guard
 
 Write a function that takes a string or number and returns its length if it's a string or the square of the number if
 it's a number. Use union types to handle both cases.
@@ -360,29 +465,27 @@ it's a number. Use union types to handle both cases.
 3. Use a type guard to check the actual type of the parameter.
 4. If the parameter is a string, display its length. If it's a number, display its square.
 
-### Exercise 2: Intersection Types
+```typescript
+// TODO: Implement the lengthOrSquare function
+// define the type(s) for 'value'
+function lengthOrSquare(value) {
+    // TODO: Use a type guard to check the actual type of 'value'
+    // if type is string, retrurn the length of the string
+    // if type is number return the square of the number
+}
 
-Create interfaces for a `Person` with name and age properties and an `Address` with city and zip code properties. Define
-a type that combines both interfaces and represents a person's profile.
+// Prompt the user to enter a value as either a string or a number
+const userInput = /* TODO: Get user input */;
+const parsedValue = /* TODO: If userInput is numeric, convert it to number else keep it as string */;
 
-1. Define an interface named `Person` with properties `name` and `age`.
-2. Define an interface named `Address` with properties `city` and `zipCode`.
-3. Create a type named `PersonProfile` by combining the `Person` and `Address` interfaces using an intersection type.
-4. Prompt the user to enter details for a person and an address, and create an object of type `PersonProfile`.
-5. Display the combined details of the person and address.
+// Call the lengthOrSquare function
+const result = lengthOrSquare(parsedValue);
+console.log(typeof result);
+console.log(result);
 
-### Exercise 3: Type Guards
+```
 
-Develop a function that takes a value and determines whether it's a string or a number. Use type guards to differentiate
-between the two types and print a message accordingly.
-
-1. Prompt the user to enter a value as either a string or a number.
-2. Define a TypeScript function that takes a parameter of type `string | number`.
-3. Use the `typeof` operator to differentiate between string and number.
-4. If the parameter is a string, display a message indicating it's a string. If it's a number, display a message
-   indicating it's a number.
-
-### Exercise 4: Generics
+### Assignment 6: Generics
 
 Write a generic function that reverses the elements of an array. Test the function with arrays of numbers, strings, and
 other types.
@@ -391,5 +494,18 @@ other types.
    parameter `T`.
 2. Inside the function, reverse the elements of the array using a loop or the `reverse` method.
 3. Return the reversed array.
-4. Prompt the user to enter an array of numbers, an array of strings, and an array of any other type.
-5. Call the `reverseArray` function for each array type and display the reversed arrays.
+4. Call the `reverseArray` function for each array type and display the reversed arrays.
+
+```typescript
+
+// Test the function with arrays of different types
+const numberArray: number[] = [1, 2, 3, 4, 5];
+const stringArray: string[] = ["apple", "banana", "cherry", "date"];
+const mixedArray: (string | number | boolean)[] = [true, 42, "hello", false];
+
+// Use console log to print the result. Desired result:
+// Reversed Array of Numbers: [ 5, 4, 3, 2, 1 ]
+// Reversed Array of Strings: [ 'date', 'cherry', 'banana', 'apple' ]
+// Reversed Mixed Array: [ false, 'hello', 42, true ]
+
+```

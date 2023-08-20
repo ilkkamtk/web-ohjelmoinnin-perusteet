@@ -1,73 +1,159 @@
-## Asynchronous Programming and Promises
+## Utility Types in TypeScript
 
-1. **Introduction to Asynchronous Programming:**
-    - Explanation of synchronous vs. asynchronous code execution.
-    - Common scenarios requiring asynchronous programming.
+TypeScript's utility types are built-in type transformations that can be applied to existing types to create new types or modify existing ones. They enhance code readability, maintainability, and reduce the need for repetitive type definitions.
 
-2. **Callbacks and Callback Hell:**
-    - Understanding callbacks and their limitations.
-    - Exploring callback hell and its drawbacks.
+1. **`Partial<Type>`:**
+   - Creates a type with all properties of the given `Type` set as optional.
+   - Useful for creating partial forms or objects with optional properties.
 
-3. **Introduction to Promises:**
-    - Explanation of Promises as a solution to callback hell.
-    - Creating and using Promises for asynchronous operations.
+   ```typescript
+   type Person = {
+     name: string;
+     age: number;
+   };
+   
+   type PartialPerson = Partial<Person>;
+   // PartialPerson has properties name and age as optional
+   ```
 
-4. **Chaining Promises:**
-    - Chaining multiple Promises to handle sequential asynchronous tasks.
-    - Using `.then()` to process Promise results.
+2. **`Required<Type>`:**
+   - Creates a type with all properties of the given `Type` set as required.
+   - Useful when you want to ensure that an object has all its properties defined.
 
-5. **Async/Await Syntax:**
-    - Introduction to async/await syntax for writing asynchronous code.
-    - Writing asynchronous functions using the `async` keyword.
+   ```typescript
+   type PartialPerson = {
+     name?: string;
+     age?: number;
+   };
+   
+   type RequiredPerson = Required<PartialPerson>;
+   // RequiredPerson has properties name and age as required
+   ```
 
-6. **Error Handling with Promises:**
-    - Handling errors and exceptions in Promise-based code.
-    - Using `.catch()` to handle Promise rejections.
+3. **`Readonly<Type>`:**
+   - Creates a type with all properties of the given `Type` set as readonly.
+   - Prevents modification of object properties after initialization.
 
-7. **Parallel and Concurrent Promises:**
-    - Running multiple Promises concurrently.
-    - Using `Promise.all()` and `Promise.race()` for parallel execution.
+   ```typescript
+   type MutablePerson = {
+     name: string;
+   };
+   
+   type ReadonlyPerson = Readonly<MutablePerson>;
+   // ReadonlyPerson has readonly property name
+   ```
 
-8. **Working with APIs and Fetch:**
-    - Making HTTP requests using the `fetch()` function.
-    - Processing API responses with Promises.
+4. **`Record<Keys, Type>`:**
+   - Creates an object type with keys from `Keys` and values of type `Type`.
+   - Useful for creating dictionaries or mapping types.
 
-9. **Handling Asynchronous Control Flow:**
-    - Understanding the flow of asynchronous code execution.
-    - Managing asynchronous operations with control flow patterns.
+   ```typescript
+   type Person = {
+     name: string;
+     age: number;
+   };
+   
+   type PersonMap = Record<string, Person>;
+   // PersonMap maps string keys to Person objects
+   ```
 
-10. **Async Patterns and Best Practices:**
-    - Handling loading states and showing progress indicators.
-    - Throttling and debouncing asynchronous operations.
+5. **`Pick<Type, Keys>`:**
+   - Creates a type by picking specific properties `Keys` from the given `Type`.
+   - Useful for extracting a subset of properties from an object.
 
-Many concepts related to asynchronous programming and Promises are similar between JavaScript and TypeScript since
-TypeScript is a superset of JavaScript. However, TypeScript introduces some additional features and benefits that can
-enhance the development experience and help catch errors early. Here's how asynchronous programming in TypeScript
-compares to JavaScript:
+   ```typescript
+   type Person = {
+     name: string;
+     age: number;
+     address: string;
+   };
+   
+   type PersonInfo = Pick<Person, 'name' | 'age'>;
+   // PersonInfo only includes properties name and age
+   ```
 
-1. **Type Annotations and Safety:** TypeScript's static typing allows you to specify types for variables, function
-   parameters, and return values. This can help catch type-related errors in your asynchronous code before runtime,
-   ensuring that you're using the correct data types throughout your async operations.
+6. **`Omit<Type, Keys>`:**
+   - Creates a type by omitting specific properties `Keys` from the given `Type`.
+   - Useful for excluding certain properties from an object.
 
-2. **Promises with Type Annotations:** In TypeScript, you can use type annotations to specify the type of data that a
-   Promise will resolve to or reject with. This can provide better code documentation and prevent potential type
-   mismatches when handling Promise results.
+   ```typescript
+   type Person = {
+     name: string;
+     age: number;
+     address: string;
+   };
+   
+   type BasicPerson = Omit<Person, 'address'>;
+   // BasicPerson excludes property address
+   ```
 
-3. **Async/Await with Type Safety:** TypeScript's async/await syntax allows you to write asynchronous code that looks
-   more like synchronous code. The added benefit is that you can specify the expected return type of an async function
-   using type annotations, improving readability and safety.
+7. **`Exclude<Type, ExcludedUnion>`:**
+   - Creates a type by excluding values from `Type` that are assignable to `ExcludedUnion`.
+   - Useful for narrowing down unions based on exclusion.
 
-4. **Integrated Development Environment (IDE) Support:** TypeScript's type system provides better tooling and code
-   suggestions in modern IDEs. This can be particularly helpful when dealing with asynchronous operations, as the IDE
-   can provide information about expected types and available methods, reducing the likelihood of mistakes.
+   ```typescript
+   type NumberOrString = number | string;
+   
+   type OnlyNumbers = Exclude<NumberOrString, string>;
+   // OnlyNumbers includes only number type
+   ```
 
-5. **TypeScript-specific Libraries and Patterns:** TypeScript has its own set of libraries and patterns that work well
-   with asynchronous programming. For example, the `ts-utils` library provides utility functions for working with
-   Promises in a type-safe manner.
+8. **`Extract<Type, Union>`:**
+   - Creates a type by extracting values from `Type` that are assignable to `Union`.
+   - Useful for narrowing down unions based on inclusion.
 
-6. **Better Error Handling:** TypeScript's type system can help catch potential errors related to Promise chaining, null
-   and undefined values, and incorrect usage of async/await.
+   ```typescript
+   type NumberOrString = number | string;
+   
+   type OnlyNumbers = Extract<NumberOrString, number>;
+   // OnlyNumbers includes only number type
+   ```
 
-While the core concepts of asynchronous programming and Promises remain consistent between JavaScript and TypeScript,
-TypeScript's type system and language features can provide additional benefits that contribute to more reliable,
-maintainable, and type-safe asynchronous code.
+9. **`NonNullable<Type>`:**
+   - Creates a type by excluding `null` and `undefined` from the given `Type`.
+   - Ensures that a type is not nullable.
+
+   ```typescript
+   type MaybeNumber = number | null | undefined;
+   
+   type NotNullableNumber = NonNullable<MaybeNumber>;
+   // NotNullableNumber includes only number type
+   ```
+
+10. **`ReturnType<Type>`:**
+   - Extracts the return type of a function `Type`.
+   - Useful for inferring the return type of functions.
+
+    ```typescript
+    type GreetFunction = () => string;
+    
+    type GreetReturnType = ReturnType<GreetFunction>;
+    // GreetReturnType is string
+    ```
+
+11. **`Parameters<Type>`:**
+   - Extracts the parameter types of a function `Type`.
+   - Useful for inferring the argument types of functions.
+
+    ```typescript
+    type MathFunction = (a: number, b: number) => number;
+    
+    type MathParameters = Parameters<MathFunction>;
+    // MathParameters is [number, number]
+    ```
+
+12. **`RequiredKeys<Type>` and `OptionalKeys<Type>`:**
+   - Extracts the required and optional keys from an object `Type`.
+
+    ```typescript
+    type Person = {
+      name: string;
+      age?: number;
+    };
+    
+    type RequiredKeysOfPerson = RequiredKeys<Person>;
+    // RequiredKeysOfPerson is 'name'
+    
+    type OptionalKeysOfPerson = OptionalKeys<Person>;
+    // OptionalKeysOfPerson is 'age'
+    ```
