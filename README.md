@@ -19,7 +19,7 @@
 16. [Bundler](ts-bundler.md)
 17. [TypeScript 1](ts1.md)
 18. [TypeScript 2](ts2.md)
-19. TypeScript 3
-20. TypeScript - Vite
+19. [TypeScript 3](ts3.md)
+20. [TypeScript - Vite](vite.md)
 21. TypeScript - Vite PWA plugin
 22. TypeScript - Unit testing basics
