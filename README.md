@@ -1,5 +1,7 @@
 # Basics of Web Development
 
+![Hartman](images/Sgt.Hartman.webp)
+
 ## TOC
 1. [How web application works](architecture.md)
 2. [HTTP request - response](http-request-response.md)
