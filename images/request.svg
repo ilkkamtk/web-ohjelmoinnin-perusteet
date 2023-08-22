@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" font-family="Verdana">
     <!-- Request Line (Blue) -->
     <rect width="380" height="30" x="10" y="10" fill="blue" />
-    <text x="20" y="30" font-size="14" fill="white">GET /api/resource HTTP/1.1</text>
+    <text x="20" y="30" font-size="14" fill="white">POST /api/resource HTTP/1.1</text>
 
     <!-- Headers (Red) -->
     <rect width="380" height="140" x="10" y="50" fill="red" />
