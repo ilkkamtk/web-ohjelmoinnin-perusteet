@@ -11,14 +11,14 @@
 ## HTTP request
 ![HTTP request](images/request.svg)
 ```http request
-GET /index.html HTTP/1.1
+POST /index.html HTTP/1.1
 Host: example.com
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
 Accept: text/html,application/xhtml+xml
 Accept-Language: en-US,en;q=0.9
 ```
 
-- **GET**: The HTTP method used to retrieve a resource.
+- **POST**: The HTTP method used to retrieve a resource.
 - **/index.html**: The path of the resource we want to retrieve.
 - **HTTP/1.1**: The version of the HTTP protocol being used.
 - **Host: example.com**: The hostname of the server where the resource is located.
