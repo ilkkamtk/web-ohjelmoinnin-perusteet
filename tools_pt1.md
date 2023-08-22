@@ -23,7 +23,7 @@ Ultimately, it's your choice. VSCode is used by the teachers.
 
 ---
 
-## Visual Studio Code (VSCode)
+## [Visual Studio Code (VSCode)](https://code.visualstudio.com/download)
 
 - free & open source code editor by Microsoft (**!=** Visual Studio IDE)
 - wide extension support
