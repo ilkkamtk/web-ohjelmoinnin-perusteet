@@ -38,11 +38,7 @@ assignment number in file and folder names.
     - Scores between 88 and 100 receive a grade of 5.
     - Print the result on the HTML document.
     - 3p
-5. Make a new version of assignment 2. The number game should continue until the user guesses the number correctly.
-   Notify the user if the guess is too high or too low. After the user guesses right, prompt if the user wants to play
-   again.
-    - 3p
-6. Write a program that prompts the user to enter a positive integer and calculates the sum of all the natural numbers
+5. Write a program that prompts the user to enter a positive integer and calculates the sum of all the natural numbers
    up to and including that integer using a for loop. The program should display the sum on the HTML document.
     - Natural numbers are positive integers used for counting and representing quantities. Let's consider the example of
       the number 5. When the user enters 5, the program will calculate the sum of all the natural
@@ -51,7 +47,7 @@ assignment number in file and folder names.
       loop to iterate through each of these numbers and add them together. Finally, the program will display the sum,
       which in this case would be 15, on the HTML document.
     - 3p
-7. Write a program that prompts the user to enter a positive integer and generates a multiplication table up to that
+6. Write a program that prompts the user to enter a positive integer and generates a multiplication table up to that
    number
    using a `for` loop. The multiplication table displays the product of each pair of numbers from 1 to the entered
    number.
