@@ -55,7 +55,7 @@ assignment number in file and folder names.
         1. Write JavaScript code that prompts the user to enter a positive integer using
            the `prompt()`
            function. Store the user's input in a variable.
-        2. Convert the user's input from a string to a number using the `parseInt()` or `parseFloat()` function.
+        2. Convert the user's input from a string to a number.
         3. Use nested `for` loops to generate the multiplication table.
         4. The outer loop will iterate from 1 up to the entered number, representing the rows of the table.
         5. The inner loop will also iterate from 1 up to the entered number, representing the columns of the table.
