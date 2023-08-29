@@ -29,7 +29,7 @@ Study the material from the first year course:
    - 4p
 3. Open t3 folder in your IDE/editor. Create a web page that dynamically displays information about the user's browser and device using the BOM. Print the data to `#target` element. The page should show details such as:
    1. Browser name and version. (e.g. Google Chrome, 114)
-   2. Operating system name. 
+   2. (Operating system name.) 
    3. Screen width and height. 
    4. Available screen space for the browser. 
    5. Current date and time. Use Finnish [localization](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString) 
