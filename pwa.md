@@ -114,7 +114,7 @@ manifest.json
 4. [PWA asset generator](https://www.npmjs.com/package/pwa-asset-generator)
 5. [Workbox](https://developer.chrome.com/docs/workbox/)
 
-## Exercise
+## Assignment
 1. [Follow this article to create a basic Hello World PWA](https://medium.com/james-johnson/a-simple-progressive-web-app-tutorial-f9708e5f2605)
    * [Upload the files to users.metropolia.fi](https://www.youtube.com/watch?v=CDXEu4piXRA&list=PLKenVLUxjmH-y89AiiI2xcXDy5QG83D4K&index=7&ab_channel=IlkkaKylm%C3%A4niemi-Metropolia) since https is required, Azure is not needed
      * Make sure all paths and links are relative!
