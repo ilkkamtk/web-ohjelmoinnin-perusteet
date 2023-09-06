@@ -25,7 +25,7 @@
 
 ```JavaScript
 // Higher-order function example
-function operationOnNumbers(a, b, operation: (x, y) => number) {
+function operationOnNumbers(a, b, operation) {
   return operation(a, b);
 }
 
