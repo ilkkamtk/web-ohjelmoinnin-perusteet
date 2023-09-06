@@ -291,11 +291,7 @@ console.log(redClothes);
 ```
 
 ## Exercise 6: reduce
-Certainly! Here's an exercise that involves using the `reduce` function to accumulate values from an array:
 
-**Exercise: Accumulating Data with `reduce`**
-
-**Scenario:**
 You are working on a finance application that needs to calculate the total expenses of a user. An array called `expenses` contains expense objects, each with properties `category` and `amount`. Your task is to implement the function `calculateTotalExpenses` that uses the `reduce` function to accumulate the total expenses from the `expenses` array.
 - Use the `reduce` function to sum up the `amount` property of each expense object.
 - Return the total accumulated expenses.
