@@ -113,7 +113,7 @@ manifest.json
 3. [web.dev](https://web.dev/progressive-web-apps/)
 4. [PWA asset generator](https://www.npmjs.com/package/pwa-asset-generator)
 5. [Workbox](https://developer.chrome.com/docs/workbox/)
-6. [https://www.simicart.com/manifest-generator.html/] Manifest generator
+6. [Manifest generator](https://www.simicart.com/manifest-generator.html/)
 
 ## Assignment
 1. [Follow this article to create a basic Hello World PWA](https://medium.com/james-johnson/a-simple-progressive-web-app-tutorial-f9708e5f2605)
