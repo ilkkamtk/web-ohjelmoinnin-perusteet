@@ -159,8 +159,13 @@ definitions.
  type OptionalKeysOfPerson = OptionalKeys<Person>;
  // OptionalKeysOfPerson is 'age'
  ```
+---
 
-# Assignments
+## [Exercises](utility-exercises.md)
+
+---
+
+## Assignments
 
 ### Converting the Restaurant App to TypeScript
 
