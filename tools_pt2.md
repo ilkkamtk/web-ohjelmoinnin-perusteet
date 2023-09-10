@@ -36,7 +36,8 @@
           "outDir": "./build",
           "target": "ESNext",
           "module": "ESNext",
-          "noImplicitAny": true
+          "noImplicitAny": true,
+          "strict": true
         },
         "include": ["./src/**/*"]
     }

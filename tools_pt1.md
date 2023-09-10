@@ -185,7 +185,6 @@ code analysis and identifying potential issues.
       bracketSpacing: false,
       singleQuote: true,
       trailingComma: 'es5',
-      arrowParens: 'avoid',
     };
     ```
 
