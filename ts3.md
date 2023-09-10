@@ -162,9 +162,7 @@ definitions.
 
 # Assignments
 
-Certainly, here are more detailed instructions for the assignment:
-
-### Assignment: Converting the Restaurant App to TypeScript
+### Converting the Restaurant App to TypeScript
 
 Convert the existing JavaScript-based Restaurant Application into TypeScript. TypeScript will help us catch potential
 errors early and make the codebase more maintainable.
