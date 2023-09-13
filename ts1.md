@@ -372,6 +372,7 @@ type alias and print its details.
 3. Display the details of the book object to the user.
 
 ```typescript
+export {}; // hack to ignore Book from task 4  
 // TODO: Define a type alias named 'Book' with appropriate properties
 
 
@@ -408,6 +409,7 @@ author. Create instances of this type alias for different products.
 3. Display the details of each product, including the properties specific to the chosen type.
 
 ```TypeScript
+export {}; // hack to ignore Book from task 3
 // TODO Define the 'ElectronicDevice' interface (or type)
 
 // Define the 'Book' interface (or type)
