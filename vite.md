@@ -54,4 +54,4 @@ delivering a faster and more efficient development experience by leveraging the 
 
 4. **Deployment**:
     - Deploying a Vite project is similar to deploying any other web application. You can use various hosting
-      services or deploy it to your server. Remember to serve the files from the `dist` directory.
+      services or deploy it to your server. Remember to serve the files from the `dist` directory. 
