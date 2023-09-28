@@ -23,5 +23,5 @@
 18. [TypeScript 2](ts2.md)
 19. [TypeScript 3](ts3.md)
 20. [TypeScript - Vite](vite.md)
-21. TypeScript - Vite PWA plugin
+21. [TypeScript - Vite PWA plugin](VitePWA.md)
 22. [TypeScript - Unit testing basics](testing.md)
