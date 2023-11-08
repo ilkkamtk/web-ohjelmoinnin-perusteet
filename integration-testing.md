@@ -36,3 +36,24 @@
 15. **Regression Testing**: Regularly run tests to detect regressions when new features or changes are introduced to the codebase.
 
 ## [Exercise](https://github.com/ilkkamtk/integration-testing-exercise#rest-api-integration-testing)
+
+## End-to-end testing
+- **User Scenario Validation:** End-to-End testing ensures that the entire application functions seamlessly from the user's perspective. It validates user scenarios by testing the complete flow of actions and interactions within the application.
+
+- **Integration of Components:** Similar to integration testing, end-to-end testing verifies the integration and collaboration of all individual components, ensuring they work harmoniously together to deliver the intended functionality.
+
+- **Data Lifecycle Testing:** End-to-End tests examine the complete lifecycle of data within the system. This includes data input, processing, storage, retrieval, and presentation to the user. It validates that data is handled correctly throughout its journey.
+
+- **User Interface Validation:** End-to-End testing checks the user interface to ensure it is consistent, responsive, and behaves as expected across different components. This includes validating UI elements, navigation, and overall user experience.
+
+- **Cross-Browser and Cross-Device Testing:** End-to-End testing goes beyond a single environment, ensuring that the application performs reliably across various browsers and devices. It validates that the user experience is consistent and functional across different platforms.
+
+- **External System Integration:** End-to-End testing includes testing interactions with external systems, such as databases, third-party services, or APIs. It ensures that the application effectively communicates with these external components.
+
+- **Error Handling and Recovery:** End-to-End testing covers scenarios where errors may occur, validating that the application handles errors gracefully and provides appropriate feedback to users. It also tests the recovery process to ensure the application can recover from unexpected issues.
+
+- **Performance and Load Testing:** In addition to functional testing, end-to-end testing may involve performance and load testing to ensure the application can handle expected user loads and respond efficiently under various conditions.
+
+- **Regression Testing:** End-to-End testing serves as a form of regression testing, ensuring that new updates or changes do not negatively impact the existing functionality of the application.
+
+## [Exercise](https://github.com/ilkkamtk/integration-testing-exercise/tree/views#3-end-to-end-tests)
