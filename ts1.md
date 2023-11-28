@@ -167,6 +167,7 @@ Primitive types in TypeScript represent the basic building blocks for variables 
 
 - **Choosing the Right Approach:**
     - [Types vs Interfaces](https://www.typescriptlang.org/play#example/types-vs-interfaces)
+    - [Types over Interfaces](https://youtu.be/oiFo2z8ILNo?si=i5WpnXLfGwqL_eXG)
     - Consider your specific use case and design goals when deciding between type aliases and interfaces.
     - Strive for consistency in your codebase, using the approach that best fits the context and contributes to code
       quality.
@@ -174,15 +175,19 @@ Primitive types in TypeScript represent the basic building blocks for variables 
 ## Function Type Annotations
 
 1. **Explaining the Syntax for Specifying Parameter Types and Return Type Using Type Annotations:**
-    - TypeScript allows you to annotate function parameters and return types using the colon `:` followed by the desired type.
+    - TypeScript allows you to annotate function parameters and return types using the colon `:` followed by the desired
+      type.
     - The syntax for function type annotations is: `(parameter: type, parameter: type): return_type`.
     - You can use primitive types like `number`, `string`, `boolean`, custom types, or even union types in annotations.
 
 2. **Benefits of Using Type Annotations for Functions:**
-    - **Type Safety:** Type annotations catch type-related errors during development, helping you avoid unexpected runtime errors.
-    - **Readability:** Annotations make code more readable by clearly indicating what types of values a function expects and returns.
+    - **Type Safety:** Type annotations catch type-related errors during development, helping you avoid unexpected
+      runtime errors.
+    - **Readability:** Annotations make code more readable by clearly indicating what types of values a function expects
+      and returns.
     - **Documentation:** Annotations serve as documentation, providing a clear understanding of the function's contract.
-    - **Intellisense:** Integrated development environments can provide better code suggestions and autocompletion based on type annotations.
+    - **Intellisense:** Integrated development environments can provide better code suggestions and autocompletion based
+      on type annotations.
 
 3. **Examples of Functions with Type Annotations:**
    ```typescript
@@ -276,7 +281,8 @@ Primitive types in TypeScript represent the basic building blocks for variables 
    ```
 6. **Generics**
 
-    - Generics in TypeScript allow you to create flexible and reusable components that work with various data types while preserving type safety.
+    - Generics in TypeScript allow you to create flexible and reusable components that work with various data types
+      while preserving type safety.
     - You can create functions that operate on different types by using type parameters.
     ```typescript
     function identity<T>(value: T): T {
@@ -286,7 +292,7 @@ Primitive types in TypeScript represent the basic building blocks for variables 
     const result = identity(42); // Inferred type: number
     const message = identity("Hello"); // Inferred type: string
     ```
-    
+
 # Assignments
 
 ### Assignment 1: Calculating Total Cost
@@ -304,20 +310,20 @@ const cart: Item[] = [];
 // TODO: Implement a loop to prompt the user for item details
 // Use 'while' loop to keep prompting until an empty item name is entered
 while (true) {
-  // TODO: Prompt user for item name, price, and quantity
-  const itemName = /* TODO: Get user input */;
-  
-  // Break the loop if an empty item name is entered
-  if (itemName === "") {
-    break;
-  }
-  
-  const itemPrice = /* TODO: Get user input */;
-  const itemQuantity = /* TODO: Get user input */;
-  
-  // Create an item object and add it to the 'cart' array
-  const newItem: Item = { name: itemName, price: itemPrice, quantity: itemQuantity };
-  cart.push(newItem);
+    // TODO: Prompt user for item name, price, and quantity
+    const itemName = /* TODO: Get user input */;
+
+    // Break the loop if an empty item name is entered
+    if (itemName === "") {
+        break;
+    }
+
+    const itemPrice = /* TODO: Get user input */;
+    const itemQuantity = /* TODO: Get user input */;
+
+    // Create an item object and add it to the 'cart' array
+    const newItem: Item = {name: itemName, price: itemPrice, quantity: itemQuantity};
+    cart.push(newItem);
 }
 
 // Calculate the total cost using the 'map' and 'reduce' functions
@@ -337,15 +343,15 @@ undefined. Use the `number`, `null`, and `undefined` primitive types.
 // TODO: Implement the squareRoot function
 // parameter num should be a number or null or undefined and the function shoud return a number or a string
 function squareRoot(num) {
-  // TODO: Check if the input is undefined or null. If fail, return 'Input is undefined or null.'
-    
-  // TODO: Check if the input is a valid number. If fail, return 'Invalid input. Please enter a valid number.'
-    
-  // TODO: Handle cases where the input is negative. If fail, return 'Cannot calculate square root of a negative number.'
- 
-  // Calculate the square root and return the result
-  const sqrt = Math.sqrt(num);
-  return sqrt;
+    // TODO: Check if the input is undefined or null. If fail, return 'Input is undefined or null.'
+
+    // TODO: Check if the input is a valid number. If fail, return 'Invalid input. Please enter a valid number.'
+
+    // TODO: Handle cases where the input is negative. If fail, return 'Cannot calculate square root of a negative number.'
+
+    // Calculate the square root and return the result
+    const sqrt = Math.sqrt(num);
+    return sqrt;
 }
 
 // Prompt the user to enter a number
@@ -378,14 +384,14 @@ export {}; // hack to ignore Book from task 4
 
 // TODO: Implement the promptForBook function
 function promptForBook() {
-  // TODO: Prompt user for book details (title, author, publication year)
-  const bookTitle = /* TODO: Get user input for title */;
-  const bookAuthor = /* TODO: Get user input for author */;
-  const bookPublicationYear = /* TODO: Get user input for publication year */;
+    // TODO: Prompt user for book details (title, author, publication year)
+    const bookTitle = /* TODO: Get user input for title */;
+    const bookAuthor = /* TODO: Get user input for author */;
+    const bookPublicationYear = /* TODO: Get user input for publication year */;
 
-  // TODO: Create an object of type 'Book' with the entered values
-  const book: Book = /* TODO: Create the Book object */;
-  return book;
+    // TODO: Create an object of type 'Book' with the entered values
+    const book: Book = /* TODO: Create the Book object */;
+    return book;
 }
 
 // TODO: Call the promptForBook function to get the book details
@@ -419,17 +425,17 @@ export {}; // hack to ignore Book from task 3
 
 // Implement instances of the 'Product' type
 function createElectronicDevice(): ElectronicDevice {
-  // TODO: Prompt user for electronic device details (brand and model)
-  const brand = /* TODO: Get user input for brand */;
-  const model = /* TODO: Get user input for model */;
-  // TODO: return object containing brand and model
+    // TODO: Prompt user for electronic device details (brand and model)
+    const brand = /* TODO: Get user input for brand */;
+    const model = /* TODO: Get user input for model */;
+    // TODO: return object containing brand and model
 }
 
 function createBook(): Book {
-  // TODO: Prompt user for book details (title and author)
-  const title = /* TODO: Get user input for title */;
-  const author = /* TODO: Get user input for author */;
-  // TODO: return object containing title and author
+    // TODO: Prompt user for book details (title and author)
+    const title = /* TODO: Get user input for title */;
+    const author = /* TODO: Get user input for author */;
+    // TODO: return object containing title and author
 }
 
 // Create instances of 'Product'
@@ -438,14 +444,14 @@ const bookProduct = createBook();
 
 // Display the details of each product
 function displayProductDetails(product: Product) {
-  console.log(`Product Type: ${product.type}`);
-  if (product.type === 'electronic') {
-    console.log(`Brand: ${product.brand}`);
-    console.log(`Model: ${product.model}`);
-  } else {
-    console.log(`Title: ${product.title}`);
-    console.log(`Author: ${product.author}`);
-  }
+    console.log(`Product Type: ${product.type}`);
+    if (product.type === 'electronic') {
+        console.log(`Brand: ${product.brand}`);
+        console.log(`Model: ${product.model}`);
+    } else {
+        console.log(`Title: ${product.title}`);
+        console.log(`Author: ${product.author}`);
+    }
 }
 
 console.log('Electronic Device Details:');
