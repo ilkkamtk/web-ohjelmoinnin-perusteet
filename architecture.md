@@ -70,6 +70,10 @@
 - They may include features like discussion boards, messaging systems, and shared document repositories.
 - Web applications enhance convenience by enabling access from anywhere with an internet connection.
 
+---
+
+[What is a tech stack?](https://www.youtube.com/watch?v=Sxxw3qtb3_g)
+
 
 
 

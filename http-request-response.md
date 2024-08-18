@@ -70,3 +70,17 @@ Date: Sat, 10 Jun 2023 15:30:00 GMT
 [Binary data representing the JPG image]
 
 ```
+---
+
+## HTTP Methods
+
+- **GET**: Retrieve data from the server.
+- **POST**: Send data to the server to create or update a resource.
+- **PUT**: Update an existing resource on the server.
+- **DELETE**: Remove a resource from the server.
+- **PATCH**: Partially update a resource.
+
+---
+
+## HTTP Status Codes
+[What are HTTP status codes?](https://umbraco.com/knowledge-base/http-status-codes)

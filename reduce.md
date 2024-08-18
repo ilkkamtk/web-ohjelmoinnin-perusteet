@@ -4,17 +4,17 @@ The `reduce` method is used to accumulate values from an array into a single res
 
 **Syntax:**
 ```javascript
-const result = array.reduce(callback(accumulator, currentValue, index, array) {
+const result = array.reduce((accumulator, currentValue, index, array) => {
   // Return the updated accumulator value
 }, initialValue);
 ```
 
-- `callback` is a function that will be executed for each element in the array.
-- `accumulator` is the accumulated value that starts with the `initialValue`.
-- `currentValue` is the current element being processed.
-- `index` is the index of the current element.
-- `array` is the array being iterated.
-- `initialValue` is an optional initial value for the `accumulator`.
+- The first parameter is a function that will be executed for each element in the array.
+    - `accumulator` is the accumulated value that starts with the `initialValue`.
+    - `currentValue` is the current element being processed.
+    - `index` is the index of the current element.
+    - `array` is the array being iterated.
+- The second parameter of reduce `initialValue` is an optional initial value for the `accumulator`.
 
 **Example using Arrow Function:**
 
