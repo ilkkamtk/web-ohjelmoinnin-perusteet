@@ -206,7 +206,7 @@ code analysis and identifying potential issues.
 ## Generating JavaScript project settings for Prettier, ESLint and EditorConfig
 1. Install [Node.js LTS version](https://nodejs.org/en) (more about Node later in this course)
 2. Create new folder. Open your terminal to that folder. Run `npm init -y`
-3. Run ESLint configuration: `npm init @eslint/config`
+3. Run ESLint configuration: `npm init @eslint/config@latest`
 4. Answers to questions in order:
    - How would you like to use ESLint? **To check syntax, find problems, and enforce code style**
    - What type of modules does your project use? **JavaScript modules (import/export)**
