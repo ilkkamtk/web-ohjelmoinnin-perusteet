@@ -208,27 +208,13 @@ code analysis and identifying potential issues.
 2. Create new folder. Open your terminal to that folder. Run `npm init -y`
 3. Run ESLint configuration: `npm init @eslint/config@latest`
 4. Answers to questions in order:
-   - How would you like to use ESLint? **To check syntax, find problems, and enforce code style**
+   - How would you like to use ESLint? **To check syntax and find problems**
    - What type of modules does your project use? **JavaScript modules (import/export)**
    - Which framework does your project use? **None of these**
    - Does your project use TypeScript? **No**
    - Where does your code run? **Browser**
-   - How would you like to define a style for your project? **Use a popular style guide**
-   - Which style guide do you want to follow? **Google: https://github.com/google/eslint-config-google**
-   - What format do you want your config file to be in? **JavaScript**
-   - Would you like to install them now? **Yes**
-   - Which package manager do you want to use? **npm**
-5. Install Prettier plugin for ESLint: `npm i -D eslint-plugin-prettier eslint-config-prettier`
-6. You should have new file `.eslintrc.js`. Modify _extends_ and _rules_ properties:
-   ```javascript
-   ...
-   extends: ['google', 'eslint:recommended', 'plugin:prettier/recommended'],  // if using WebStorm, omit plugin:prettier/recommended
-   ...
-   rules: {
-      'require-jsdoc': 0,
-   },
-   ...
-   ```
+
+6. You should have new file `eslint.config.mjs` which has the basic configuration for ESLint.
 7. Write `.editorconfig` and `.prettierrc.js` files according to the examples earlier in this page.
 8. Open the settings in Visual Studio Code by clicking on "File" -> "Preferences" -> "Settings" or using the shortcut Ctrl + ,.
 9. In the search bar, type "Format On Save" and check the box to enable it. This ensures that your code will be automatically formatted when you save the file.
@@ -245,7 +231,7 @@ code analysis and identifying potential issues.
     greeting();
     ```
 11. Save the file. Note how VSCode fixes formatting errors automatically.
-12. If you are using WebStorm, right click somewhere over .eslintrc.js, choose 'Apply ESlint Code Style Rules'. Enable format on save on [WebStorm](https://www.jetbrains.com/help/webstorm/eslint.html#ws_eslint_configure_run_eslint_on_save).
+12. If you are using WebStorm, right click somewhere over eslint.config.mjs, choose 'Apply ESlint Code Style Rules'. Enable format on save on [WebStorm](https://www.jetbrains.com/help/webstorm/eslint.html#ws_eslint_configure_run_eslint_on_save).
 13. Write index.html:
     ```html
     <!DOCTYPE html>
