@@ -108,7 +108,7 @@ manifest.json
 ```
 
 ### Tools & Links
-1. [Debug Progressive Web Apps]([https://developers.google.com/web/tools/lighthouse/](https://developer.chrome.com/docs/devtools/progressive-web-apps))
+1. [Debug Progressive Web Apps](https://developer.chrome.com/docs/devtools/progressive-web-apps)
 2. [PWA Builder](https://www.pwabuilder.com/)
 3. [web.dev](https://web.dev/progressive-web-apps/)
 4. [PWA asset generator](https://www.npmjs.com/package/pwa-asset-generator)
@@ -122,6 +122,7 @@ manifest.json
      * [3 ways to redirect to HTTPS](https://www.eukhost.com/kb/3-simple-ways-to-redirect-a-website-from-http-to-https/)
    * Use arrow functions and async/await with try/catch instead of then/catch
    * Test on your phone that you can add the app to home screen
+   * Skip Lighthouse, since it's not used anymore. [Instead use 'Application' tab in Developer Tools](https://developer.chrome.com/docs/devtools/progressive-web-apps). 
 2. Add more content to the app
    * Add a few paragraphs of text
    * Add an image to the app background
