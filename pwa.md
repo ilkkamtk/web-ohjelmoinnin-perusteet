@@ -108,12 +108,12 @@ manifest.json
 ```
 
 ### Tools & Links
-1. [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
+1. [Debug Progressive Web Apps]([https://developers.google.com/web/tools/lighthouse/](https://developer.chrome.com/docs/devtools/progressive-web-apps))
 2. [PWA Builder](https://www.pwabuilder.com/)
 3. [web.dev](https://web.dev/progressive-web-apps/)
 4. [PWA asset generator](https://www.npmjs.com/package/pwa-asset-generator)
 5. [Workbox](https://developer.chrome.com/docs/workbox/)
-6. [Manifest generator](https://www.simicart.com/manifest-generator.html/)
+6. [Manifest generator](https://progressier.com/pwa-manifest-generator)
 
 ## Assignment
 1. [Follow this article to create a basic Hello World PWA](https://medium.com/james-johnson/a-simple-progressive-web-app-tutorial-f9708e5f2605)
