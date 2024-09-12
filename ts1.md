@@ -295,6 +295,8 @@ Primitive types in TypeScript represent the basic building blocks for variables 
 
 # Assignments
 
+You can use [this repo](https://github.com/ilkkamtk/typescript-starter) as a template for your assignments.
+
 ### Assignment 1: Calculating Total Cost
 
 Write a TypeScript program that calculates the total cost of a shopping cart. The cart contains items with their prices.
