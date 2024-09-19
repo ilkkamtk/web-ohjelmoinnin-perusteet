@@ -178,14 +178,14 @@ code analysis and identifying potential issues.
 - helps maintain code readability and improves code maintainability by providing a consistent and clean codebase.
 
     ```javascript
-    // sample .prettierrc.js
-    module.exports = {
+    // sample .prettierrc.mjs
+    const config = {
       semi: true,
       singleQuote: true,
       bracketSpacing: false,
-      singleQuote: true,
       trailingComma: 'es5',
     };
+    export default config;
     ```
 
 ## [ESLint](https://eslint.org/)
@@ -214,8 +214,8 @@ code analysis and identifying potential issues.
    - Does your project use TypeScript? **No**
    - Where does your code run? **Browser**
 
-6. You should have new file `eslint.config.mjs` which has the basic configuration for ESLint.
-7. Write `.editorconfig` and `.prettierrc.js` files according to the examples earlier in this page.
+6. You should have new file `eslint.config.js` which has the basic configuration for ESLint.
+7. Write `.editorconfig` and `.prettierrc.mjs` files according to the examples earlier in this page.
 8. Open the settings in Visual Studio Code by clicking on "File" -> "Preferences" -> "Settings" or using the shortcut Ctrl + ,.
 9. In the search bar, type "Format On Save" and check the box to enable it. This ensures that your code will be automatically formatted when you save the file.
    - If you are using Webstorm, enable ESLint in your WebStrom project
