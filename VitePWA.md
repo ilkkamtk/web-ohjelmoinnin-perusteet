@@ -103,7 +103,7 @@ localStorage.removeItem('username');
 The goal is to make a simple PWA app where you can log in to the Restaurant App and upload an avatar and change your
 email.
 
-1. Use [Postman](https://www.postman.com/downloads/) to create an account to the [Restaurant API](https://student-restaurants.azurewebsites.net/#api-User-CreateUser)
+1. Use [Postman](https://www.postman.com/downloads/) to create an account to the [Restaurant API](https://media1.edu.metropolia.fi/restaurant/#api-User-CreateUser)
    - Copy the ethereal url from the response (`https://ethereal.email/message/XXYYZZ`) to your browser to activate the account.
 2. Use Postman to test that your account works. Try to [update userdata](https://student-restaurants.azurewebsites.net/#api-User-UpdateCurrentUser) and [upload an avatar](https://student-restaurants.azurewebsites.net/#api-User-UploadAvatar) for the user.
 3. [Download the starter files](https://github.com/ilkkamtk/vite-pwa-starter) and fill in the TODO:s in the .ts-files
