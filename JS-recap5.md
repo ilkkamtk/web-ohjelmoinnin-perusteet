@@ -14,7 +14,7 @@ using [Reqres](https://reqres.in/), which is a dummy API for testing frontends.
 - Note: reqres below requires API key:
    ```javascript
    ...
-     const options = {
+   const options = {
       headers: {
         'x-api-key': 'reqres-free-v1',
       }
