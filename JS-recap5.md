@@ -11,6 +11,18 @@ Clone the new repository to your local computer. Put each assignment into its ow
 files for each assignment. Use the assignment number in file and folder names. In the first four assignments you'll be
 using [Reqres](https://reqres.in/), which is a dummy API for testing frontends.
 
+- Note: reqres below requires API key:
+   ```javascript
+   ...
+     const options = {
+      headers: {
+        'x-api-key': 'reqres-free-v1',
+      }
+    };
+   const response = await fetch(someUrl, options);
+   ...
+   ```
+
 1. GET Method. Practice using the Fetch API with async/await to make a GET request and log the response.
     - Utilize the Fetch API with async/await to make a GET request to the URL `https://reqres.in/api/users/1`.
     - Log the response data to the console.
