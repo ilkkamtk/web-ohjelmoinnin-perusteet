@@ -56,6 +56,10 @@ const newArray = [...originalArray, 4, 5];
 function sum(...numbers) {
   return numbers.reduce((acc, num) => acc + num, 0);
 }
+
+console.log(sum(1, 2, 3));        // 6
+console.log(sum(5, 10, 15, 20));  // 50
+console.log(sum());               // 0
 ```
 
 #### Shared Syntax:
