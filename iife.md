@@ -35,7 +35,7 @@ In this example, the IIFE creates a private scope for the `message` variable and
 
 **Advanced Use Cases:**
 
-1. **Module Pattern:** IIFE is commonly used to create modular code in JavaScript, simulating private and public members.
+1. **Module Pattern:** IIFE was commonly used to create modular code in JavaScript, simulating private and public members.
 
 2. **Polluting the Global Namespace:** In some scenarios, you might want to intentionally pollute the global scope with a specific variable or utility function.
 
