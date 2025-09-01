@@ -53,6 +53,13 @@ In this section, we'll explore destructuring in different contexts and scenarios
       function displayPerson({ name, age }) {
         console.log(`Name: ${name}, Age: ${age}`);
       }
+
+      // Example usage:
+        const person1 = { name: "Alice", age: 25 };
+        const person2 = { name: "Bob", age: 32 };
+        
+        displayPerson(person1); // Output: Name: Alice, Age: 25
+        displayPerson(person2); // Output: Name: Bob, Age: 32
       ```
 
 7. **Swapping Variables:**
