@@ -16,7 +16,7 @@ array.forEach(callback(element, index, array) {
 - `index` is the index of the current element. _Used sometimes_.
 - `array` is the array being iterated. _Rarely used_.
 
-**Example using Arrow Function and Destructuring:**
+**Example using Arrow Function:**
 
 Suppose you have an array of student objects, and you want to log each student's name and grade. You can use
 the `forEach` method with an arrow function to achieve this:
@@ -28,7 +28,7 @@ const students = [
   {name: 'Eve', grade: 78},
 ];
 
-students.forEach(student => {
+students.forEach((student) => {
   console.log(`Name: ${student.name}, Grade: ${student.grade}`);
 });
 ```
