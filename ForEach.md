@@ -54,7 +54,6 @@ In this example:
 **Usage Tips:**
 
 - The `forEach` method is suitable for executing an operation for each element in the array.
-- It doesn't modify the original array; it's primarily used for side effects (e.g., logging, UI updates).
 
 **Consideration:**
 
