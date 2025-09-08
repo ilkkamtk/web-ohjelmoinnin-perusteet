@@ -303,8 +303,8 @@ Write a TypeScript program that calculates the total cost of a shopping cart. Th
 Use the `number` primitive type for prices and quantities. Start by creating the interface first.
 
 ```TypeScript
-// TODO: Write interface Item
-// TODO: Define the properties 'name', 'price', and 'quantity' within the interface
+// TODO: Write type (or interface) Item
+// TODO: Define the properties 'name', 'price', and 'quantity' within the type
 
 // Create an empty array named 'cart' to store the items
 const cart: Item[] = [];
@@ -418,9 +418,9 @@ author. Create instances of this type alias for different products.
 
 ```TypeScript
 export {}; // hack to ignore Book from task 3
-// TODO Define the 'ElectronicDevice' interface (or type)
+// TODO Define the 'ElectronicDevice' type (or interface)
 
-// Define the 'Book' interface (or type)
+// Define the 'Book' type (or interface)
 
 // Define the 'Product' type alias that can represent either 'ElectronicDevice' or 'Book'
 
