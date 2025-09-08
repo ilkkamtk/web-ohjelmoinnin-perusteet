@@ -249,7 +249,7 @@ Primitive types in TypeScript represent the basic building blocks for variables 
    
    // check that image element exists e.g. myImage is truthy hence not null
    if (myImage) {
-      mySelect.addEventListener('click', () => {
+      myImage.addEventListener('click', () => {
          // do something
       });
    }
