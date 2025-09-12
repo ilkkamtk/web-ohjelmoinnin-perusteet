@@ -187,7 +187,7 @@ errors early and make the codebase more maintainable.
     - Begin by creating types (or interfaces, depending on your preference) for the data structures used in the
       application.
     - Specifically, focus on creating types for the restaurants and menus that are obtained from the
-      Restaurant API.
+      [Restaurant API](https://media1.edu.metropolia.fi/restaurant).
     - Additionally, ensure you use built-in TypeScript types such as `number`, `string`, `boolean`, etc., wherever they
       are applicable within the code.
 
