@@ -51,7 +51,7 @@ Content types refer to the format and structure in which data is sent and receiv
 
 **Handling Form Data:**
 
-1. **HTML Forms:** In web applications, HTML forms are commonly used to collect user input. When a user submits a form, the data is typically sent to the server using the HTTP POST method. Server-side code (e.g., PHP, Python, or Node.js) processes the form data and responds accordingly.
+1. **HTML Forms:** In web applications, HTML forms are commonly used to collect user input. When a user submits a form, the data is typically sent to the server using the HTTP GET or POST method. Server-side code (e.g., PHP, Python, or Node.js) processes the form data and responds accordingly.
 
 2. **Content-Type: application/x-www-form-urlencoded:** This is a common content type for form data submissions. Data is sent as key-value pairs in the request body, with each pair separated by an ampersand (&). Servers can parse this data to access user input:
    ```text
