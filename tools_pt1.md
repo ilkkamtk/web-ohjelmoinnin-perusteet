@@ -215,23 +215,6 @@ code analysis and identifying potential issues.
    - Where does your code run? **Browser**
 
 5. You should have new file `eslint.config.js` which has the basic configuration for ESLint.
-6. run `npm install -D eslint-config-prettier eslint-plugin-prettier`
-7. Edit `eslint.config.js` to match this:
-   ```javascript
-    import js from '@eslint/js';
-    import globals from 'globals';
-    import {defineConfig} from 'eslint/config';
-    import prettier from 'eslint-plugin-prettier';
-    
-    export default defineConfig([
-      {
-        files: ['**/*.{js,mjs,cjs}'],
-        plugins: {js, prettier},
-        extends: ['js/recommended'],
-        languageOptions: {globals: globals.browser},
-      },
-    ]);
-    ```
 8. Write `.editorconfig` and `.prettierrc.mjs` files according to the examples earlier in this page.
 9. Open the settings in Visual Studio Code by clicking on "File" -> "Preferences" -> "Settings" or using the shortcut Ctrl + ,.
 10. In the search bar, type "Format On Save" and check the box to enable it. This ensures that your code will be automatically formatted when you save the file.
@@ -280,6 +263,6 @@ code analysis and identifying potential issues.
 18. Now you can easily make new JavaScript projects with the same settings with ´Use this template/Create a new repository`.
     - After creating a new repository get the files to your local computer by cloning the new repository: `git clone https://address/to/repository.git`
        - You can easily get the address to the repository from the `<> Code` button in GitHub
-    - [Here is the teacher's version](https://github.com/ilkkamtk/javascript-starter)
+    - [Here is the teacher's version](https://github.com/ilkkamtk/JS-pohja)
 
 
