@@ -106,7 +106,7 @@ const defaultValue = null;
 const value = defaultValue || 'Fallback Value';
 ```
 
-In the example above, if `defaultValue` is falsy (null, undefined, 0, empty string, etc.), the logical OR operator will return `'Fallback Value'`.
+In the example above, if `defaultValue` is falsy (null, undefined, 0, -0, 0n, empty string, false, NaN), the logical OR operator will return `'Fallback Value'`.
 
 #### Examples of Combined Usage
 
