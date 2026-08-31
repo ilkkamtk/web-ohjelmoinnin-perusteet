@@ -102,7 +102,7 @@ const total = sum([...numbers, 4, 5]);
 #### Basic Usage
 
 ```javascript
-const defaultValue = null;
+const defaultValue = '';
 const value = defaultValue || 'Fallback Value';
 ```
 
